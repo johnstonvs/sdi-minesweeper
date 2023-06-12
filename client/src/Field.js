@@ -15,7 +15,7 @@ const Field = () => {
   return (
     <div className='Field'>
       {grid.map((x, xIndex)=> x.map((y, yIndex) => {
-        return (<Square className={`div0`} setBomb={grid[xIndex][yIndex]} position={[xIndex, yIndex]}></Square>)
+        return (<Square setBomb={grid[xIndex][yIndex].bomb} position={[xIndex, yIndex]}/>)
       }))}
     </div>
   )

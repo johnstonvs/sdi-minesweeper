@@ -4,4 +4,16 @@
   grid-template-rows: repeat(10, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  }
+}
+
+.Square button {
+  background-color: brown;
+  color: aliceblue;
+  width: 100%;
+  min-height: 50px;
+  justify-self: left;
+}
+
+.Square div {
+  border: 2px;
+}
