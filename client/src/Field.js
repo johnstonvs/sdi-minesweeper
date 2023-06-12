@@ -1,6 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
 import Square from './Square';
 import { GridContext } from './App';
+import './Field.css';
 
 const Field = () => {
 
@@ -13,7 +14,9 @@ const Field = () => {
 
   return (
     <div className='Field'>
-      <Square setBomb={false} position={[ 3, 6 ]}/>
+      {grid.map((x, xIndex)=> x.map((y, yIndex) => {
+        return (<Square className={`div0`} setBomb={grid[xIndex][yIndex]} position={[xIndex, yIndex]}></Square>)
+      }))}
     </div>
   )
 }
